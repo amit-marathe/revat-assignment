@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="form">
+        <form id="form">
+            <label for="fname"> First Name:</label>
+            <input type="text" placeholder="Enter Your First Name" id="fname">
+            <div class="error"></div>
+
+            <label for="lname"> Last Name:</label>
+            <input type="text" placeholder="Enter Your Last Name" id="lname">
+            <div class="error"></div>
+
+            <label for="email"> Email address:</label>
+            <input type="email" placeholder="amit@gmail.com" id="email">
+            <div class="error"></div>
+
+            <label for="password"> Password:</label>
+            <input type="password" placeholder="Enter Your password" id="password">
+            <div class="error"></div>
+
+            <select name="" id="select">
+                <option value=""hidden>Please select the option</option>
+                <option >Python</option>
+                <option >Web Development</option>
+                <option >Blockchain</option>
+                <option >Cloud Computing</option>
+            </select>
+            <div class="error"></div>
+
+            <div class="files">
+                <label for="">Please Upload your Porfile Photo</label>
+                <input type="file" accept="image/.jpg,.pang">
+            </div>
+            
+            <label for="message"> Message</label>
+            <textarea name="" id="message" ></textarea>
+            <div class="error"></div>
+            
+            <input type="submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
