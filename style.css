@@ -1,68 +1,90 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial;
 }
 
+.form-wrapper{
+    display : flex;
+    justify-content: center;
+ }
+
 form{
-    margin: 12px;
+    margin: 1% 25% 1% 25%;
     border: 2px solid;
     display: flex;
     flex-direction: column;
-    padding: 12px 70px;
+    padding: 12px 80px;
 }
 
-form input[type="text"],input[type="email"],input[type="password"]
-{
+form input[type = "file"]::-webkit-file-upload-button{
+    border: none;
+    padding: 5.5px 12px;
+    background-color: rgba(0 ,0, 0, 0.333);
+    font-family: Arial;
+}
+
+form input[type="text"],
+input[type="email"],
+input[type="password"]{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    height: 2.2rem;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(0 ,0, 0, 0.333);
+    font-family: Arial;
+}
+
+/* .files-container {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 8px;
+    color: rgba(0 ,0, 0, 0.633);
+    
+} */
+
+.files-container input[type="file"]{
     margin-bottom: 12px;
     margin-top: 8px;
-    height: 2.0rem;
-    padding: 12px;
-    border: 1px solid;
-    border-radius: 4px;
+    border-radius: 5px;
+    border: 1px sloid rgba(0 ,0, 0, 0.333);
+    width: 100%;
+    color: rgba(0 ,0, 0, 0.633);
 }
 
 form input[type="submit"]{
-    margin-left: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 66%;
     border-radius: 5px;
     border: none;
-    padding: 5px 10px;
+    padding: 5.5px 12px;
     color: white;
     background-color: rgb(0,0,225);
 }
-
-.files{
-    display: flex;
-    flex-direction: column;
-    margin-top: 8px;
-}
-
-.files input[type="file"]{
-    margin-top: 10px;
-    margin-bottom: 12px;
-    border: 1px solid rgba(0,0,0,0.333);
-    padding: 6px;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-textarea{
-    height: 200px;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 4px;
-    margin-top: 8px;
+.error{
+    font-size: 12px;
     margin-bottom: 12px;
 }
-
-form select{
-    margin-bottom: 3px;
-    margin-top: 6px;
-    height: 2.0rem;
-    border-radius: 5px;
+#select{
+    color: rgba(0 ,0, 0, 0.633);
     padding: 5.5px 12px;
-    font-size: 15px;
+    border-radius: 4px;
+    font-family: Arial;
+    border: 1px solid rgba(0 ,0, 0, 0.333);
 }
+textarea{
+    height: 120px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0 ,0, 0, 0.333);
+}
+
 
 
 
